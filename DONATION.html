@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Responsive Payment getway form </title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#"><img src="images/ori_logo_3.png" class="logo"></a>
+
+        <input type="checkbox" id="menu_bar">
+        <label for="menu_bar"><i class="fa-solid fa-bars" id="menu"></i></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="HOME.html">HOME</a></li>
+                <li><a href="TURTLE CATEGORIES.html">TURTLE CATEGORIES</i></a></li>
+                <li><a href="HIKKADUWA TURTLE HATCHERY.html">HIKKADUWA TURTLE HATCHERY</a></li>
+                <li><a href="THREATS.html">THREATS</a></li>
+                <li><a href="#">OTHER TURTLE HATCHERIES</a>
+                    <ul>
+                        <li><a href="KOSGODA TURTLE HATCHERY.html">KOSGODA</a></li>
+                        <li><a href="BENTOTA TURTLE HATCHERY.html">BENTOTA</a></li>
+                    </ul>
+                </li>
+                <li class="navcart"><a href="SHOP.html">SHOP</a></li>
+                <li class="d_us"><a href="DONATION.html">DONATE US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="herorow">
+         <div class="herocol-1">
+             <h2>Join the tide of conservation:<br> Donate for sea turtles.</h2>
+             <button type="herobtn"><a href="DONATION.html">DONATE</a></button>
+         </div>
+         
+        </div> 
+       </section>
+    <br>
+
+    <form class="donation">
+        <h1>Donate</h1>
+        <label for="name">Name</label><br>
+        <input class="box1" type="text" name="name" id="name" placeholder="Enter Name"><br>
+        <label for="email">Email</label><br>
+        <input class="box1" type="email" name="email" id="email" placeholder="Enter Email"><br>
+        <label for="cardnum">Card Number</label><br>
+        <input class="box1" type="text" name="cardnum" id="cardnum" placeholder="1234 1234 1234 1234 "><br> 
+        <div class="dona1">
+            <label for="cardex">Card expiry month</label><br>
+            <input class="box2" type="month" id="month" name="month" placeholder="MM"><br>
+        </div>
+        <div class="dona1">
+            <label for="cardye">Card expiry year</label><br>
+            <input class="box2" type="year" name="year" id="year" placeholder="YYYY"><br>
+        </div>
+        <div class="dona1">
+            <label for="cardcvc">Card CVC</label><br>
+            <input class="box2" type="cvc" name="cvc" id="CVC" placeholder="cvc"><br>
+        </div>
+        <button class="donatebtn" type="button">Donate Now</button>
+        <button class="donatebtn" type="button">Close</button>
+    </form> 
+
+
+
+
+
+   <!-- <div class="donate">
+        <h2>Payment Method</h2>
+        <form action="" method="post">
+            <h4>Account</h4>
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="text" placeholder="Full Name" required class="name">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" placeholder="Name on Card" required class="name">
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="email" placeholder="Email Address" required class="name">
+                    <i class="fa-solid fa-envelope icon"></i>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="text" placeholder="Address" required class="name">
+                    <i class="fa-solid fa-location-dot icon" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="text" placeholder="City" required class="name">
+                    <i class="fa-solid fa-institution-dot icon" ></i>
+                </div>
+            </div>
+
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <h4>Date of Birth</h4>
+                    <input type="text" placeholder="DD" required class="dob">
+                    <input type="text" placeholder="MM" required class="dob">
+                    <input type="text" placeholder="YYYY" required
+                    class="dob">
+                </div>
+            </div>
+            
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <label for="bc1"><span>Credit Card</span></label>
+
+                    <input type="radio" name="pay" class="radio" id="bc2" checked>
+                    <label for="bc2"><span>Pay Pal</span></label>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="tel" class="name" placeholder="Card Number 1111-2222-3333-4444" required>
+                    <i class="fa-solid fa-credit-card icon"></i>
+                </div>
+            </div>
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="tel" class="name" placeholder="Card CVC 632" required>
+                    <i class="fa-solid fa-user icon"></i>
+                </div>
+            </div>
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="number" class="name" placeholder="Exp Month" required>
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                </div>
+            </div>
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="number" class="name" placeholder="Exp Year" required>
+                    <i class="fa-regular fa-calendar icon"></i>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <input type="number" class="name" placeholder="Enter Amount" required>
+                    <i class="fa-solid fa-money-bill icon"></i>
+                </div>
+            </div>
+
+            <div class="inputdetails">
+                <div class="inputbox">
+                    <button type="submit">Pay Now</button>
+                </div>
+            </div>
+
+        </form>
+    </div>-->
+   
+   <br>    
+<footer>
+    <div class="row">
+        <div class="col">
+            <h3>LINKS<div class="underline"><span></span></div></h3>
+           <ul>
+             <li><a href="home.html">HOME</a></li>
+             <li><a href="turtle_catogaries.html">TURTLE CATEGORIES</a></li>
+             <li><a href="#">HIKKADUWA TURTLE HATCHERY</a></li>
+             <li><a href="#">THREATS</a></li>
+             <li><a href="#">OTHER TURTLE HATCHERIES</a></li>
+             <li><a href="#">PURCHASE & DONATE</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <img src="images/ori_logo_3.png" class="logo">
+        </div>
+        <div class="col">
+            <h3>CONTACT US<div class="underline"><span></span></div></h3>
+            <p>12/24<br>Galle Road<br>Colombo 40000<br>Sri lanka</p>
+            <p class="email-id">turtlehatcherysl@gmail.com</p>
+            <h4>+94-11 256 89473</h4>
+        </div>
+        <div class="col"> 
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form>
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder=" Enter your email id" required>
+                <button type="submit"><i class="fas fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <i class="fab fa-brands fa-facebook"></i>
+                <i class="fab fa-brands fa-twitter"></i>
+                <i class="fab fa-brands fa-instagram"></i>
+                <i class="fab fa-brands fa-whatsapp"></i>
+                <i class="fab fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Turtle Hatchery © 2023 - All Right Reserved </p>
+  </footer>
+
+
+</body>
+</html>
